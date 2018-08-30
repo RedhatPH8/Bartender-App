@@ -21,7 +21,17 @@
             </div>
             <div class="form-group">
                 <label asp-for="Order.Drink" class="control-label"></label>
-                <input asp-for="Order.Drink" class="form-control" />
+                <select asp-for="Order.Drink" class="form-control" />
+                    <option value="">Choose your drink</option>
+                    <option value="Whiskey">Whiskey</option>
+                    <option value="Tequila">Tequila</option>
+                    <option value="Water">Water</option>
+                    <option value="Rum">Rum</option>
+                    <option value="Martini">Martini</option>
+                    <option value="Wine">Wine</option>
+                    <option value="Soda">Soda</option>
+                    <option value="Long Island Iced Tea">Long Island Iced Tea</option>
+                    <option value="Mojito">Mojito</option>
                 <span asp-validation-for="Order.Drink" class="text-danger"></span>
             </div>
             <div class="form-group">
